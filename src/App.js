@@ -6,6 +6,8 @@ import Third from './Components/Third';
 import ComponentsWithArrayOfData from './Components/ComponentWithArrayOfData';
 import ConditionalRender from './Components/ConditionalRender';
 import ConditionalRender2 from './Components/ConditionalRender2';
+import ConditionalRender3 from './Components/ConditionalRender3';
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
       <ComponentsWithArrayOfData />
       <ConditionalRender />
       <ConditionalRender2 />
+      <ConditionalRender3 />
     </React.Fragment>
   )
 };
