@@ -8,6 +8,7 @@ import ConditionalRender from './Components/ConditionalRender';
 import ConditionalRender2 from './Components/ConditionalRender2';
 import ConditionalRender3 from './Components/ConditionalRender3';
 import InlineLogicalExpression from './Components/InlineLogicalExpression';
+import Name from './Components/Name';
 
 
 
@@ -17,6 +18,7 @@ import InlineLogicalExpression from './Components/InlineLogicalExpression';
 function App() {
   return (
     <React.Fragment>
+      <Name name="Emil"/>
       <First />
       <Second />
       <Third />
