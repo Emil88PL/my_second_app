@@ -14,6 +14,10 @@
 //     );
 // };
 
+
+import PropTypes from 'prop-types';
+
+
 const ComponentWithProps = props => {
 
     const { headerText, numericProp, expressionProp,valueProp, objectProp, arrayProp, functionProp, someString} = props;
@@ -47,6 +51,30 @@ const ComponentWithProps = props => {
 ComponentWithProps.defaultProps = {
     someString: "Another Default String (Ater name)",
 };
+
+ComponentWithProps.propTypes = {
+    headerText: PropTypes.string.isRequired,
+    someString: PropTypes.string.isRequired,
+    numericProp: PropTypes.number.isRequired,
+    expressionProp: PropTypes.func.isRequired,
+    valueProp: PropTypes.func.isRequired,
+    arrayProp: PropTypes.array,
+    objectProp: PropTypes.shape({
+        key1: PropTypes.string.isRequired,
+        key2: PropTypes.number.isRequired,
+        key3: PropTypes.array.isRequired
+
+    }).isRequired
+    
+
+};
+
+
+
+
+
+
+
 
 
 

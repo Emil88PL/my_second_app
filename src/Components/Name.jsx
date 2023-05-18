@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function Name(props) {
 
     const {name} = props;
@@ -9,6 +11,10 @@ function Name(props) {
 Name.defaultProps = {
     name: "Havana",
 };
+
+Name.propTypes = {
+    name: PropTypes.string
+}
 
 
 export default Name
