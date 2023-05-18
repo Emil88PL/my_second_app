@@ -30,7 +30,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Name name="Emil"/>
+      <Name />
       <ComponentWithProps 
         headerText="Heading text from header prop"
         numericProp={100}
