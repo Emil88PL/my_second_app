@@ -16,7 +16,7 @@
 
 const ComponentWithProps = props => {
 
-    const { headerText, numericProp, expressionProp,valueProp, objectProp, arrayProp, functionProp} = props;
+    const { headerText, numericProp, expressionProp,valueProp, objectProp, arrayProp, functionProp, someString} = props;
 
     const nextNumberDisplay = arrayProp.map(seqNum => 
             <p key={seqNum}>Numbver is : {seqNum}; Next is {seqNum += 1}</p>
@@ -30,6 +30,7 @@ const ComponentWithProps = props => {
 
     return (
             <>       
+            <p>{someString}</p>
             <h1>{headerText}</h1>
             <p>Numeric prop: {numericProp}</p>
             <p>Expression prop: {expressionProp}</p>
@@ -43,6 +44,9 @@ const ComponentWithProps = props => {
             );
 }
 
+ComponentWithProps.defaultProps = {
+    someString: "Another Default String (Ater name)",
+};
 
 
 

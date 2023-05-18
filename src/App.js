@@ -16,12 +16,15 @@ import ComponentWithProps from './Components/ComponentWithProps';
 function App() {
 
   const someValue = 10;
+  
 
   const someDataObject = {
     key1: 'value1',
     key2: 2,
     key3: ['array', 'of', 'string']
   };
+
+  // const name = "EMil"
 
   const someDataArray = [0,1,2,3,4,5,6];
 
@@ -30,9 +33,10 @@ function App() {
 
   return (
     <React.Fragment>
-      <Name />
+      <Name name="Emil"/>
       <ComponentWithProps 
         headerText="Heading text from header prop"
+        
         numericProp={100}
         expressionProp={100/5}
         valueProp={someValue}
