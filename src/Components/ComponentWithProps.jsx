@@ -16,17 +16,29 @@
 
 const ComponentWithProps = props => {
 
-    const { headerText, numericProp, expressionProp,valueProp, someDataObject, arrayProp, functionProp} = props;
+    const { headerText, numericProp, expressionProp,valueProp, objectProp, arrayProp, functionProp} = props;
+
+    const nextNumberDisplay = arrayProp.map(seqNum => 
+            <p key={seqNum}>Numbver is : {seqNum}; Next is {seqNum += 1}</p>
+        );
+        // to show object Key / Values 
+    const objectPropsDisplay  = [];
+
+    for (let [key, value] of Object.entries(objectProp)) {
+        objectPropsDisplay.push(<p key={key}>The value of {key} in the bojectProp is {value}</p>)
+    }
 
     return (
             <>       
             <h1>{headerText}</h1>
-            <p>{numericProp}</p>
-            <p>{expressionProp}</p>
-            <p>{valueProp}</p>
-            <p>Showing nothing now?!: {someDataObject} end</p>
-            <p>{arrayProp}</p>
-            <p>{functionProp}</p>
+            <p>Numeric prop: {numericProp}</p>
+            <p>Expression prop: {expressionProp}</p>
+            <p>Value prop: {valueProp}</p>
+            {/* <p>Need to loop through Key / Values in someDataObject: {objectPropsDisplay}.</p> */}
+            <p>Array prop: {arrayProp}</p>
+            <p>Function props: {functionProp()}</p>
+            {nextNumberDisplay}
+            {objectPropsDisplay}
             </>
             );
 }

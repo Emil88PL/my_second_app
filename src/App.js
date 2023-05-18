@@ -25,7 +25,7 @@ function App() {
 
   const someDataArray = [0,1,2,3,4,5,6];
 
-  const someFunction = () => ("a string from a function");
+  const someFunction = () => ("A string from a function");
 
 
   return (
