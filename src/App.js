@@ -11,6 +11,7 @@ import InlineLogicalExpression from './Components/InlineLogicalExpression';
 import Name from './Components/Name';
 import ComponentWithProps from './Components/ComponentWithProps';
 import ComponentWithState from './Components/ComponentWithState';
+import ControllerWithControlledInput from './Components/ControllerWithControlledInput';
 
 
 function App() {
@@ -33,10 +34,10 @@ function App() {
 
   return (
     <React.Fragment>
+      <ControllerWithControlledInput />
       <Name name="Emil"/>
       <ComponentWithProps 
         headerText="Heading text from header prop"
-        
         numericProp={100}
         expressionProp={100/5}
         valueProp={someValue}
