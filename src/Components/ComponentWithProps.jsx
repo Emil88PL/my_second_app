@@ -53,20 +53,20 @@ ComponentWithProps.defaultProps = {
 };
 
 ComponentWithProps.propTypes = {
-    headerText: PropTypes.string.isRequired,
-    someString: PropTypes.string.isRequired,
-    numericProp: PropTypes.number.isRequired,
-    expressionProp: PropTypes.func.isRequired,
-    valueProp: PropTypes.func.isRequired,
+    headerText: PropTypes.string,
+    someString: PropTypes.string,
+    numericProp: PropTypes.number,
+    expressionProp: PropTypes.func,
+    valueProp: PropTypes.func,
     arrayProp: PropTypes.array,
     objectProp: PropTypes.shape({
-        key1: PropTypes.string.isRequired,
-        key2: PropTypes.number.isRequired,
-        key3: PropTypes.array.isRequired
-
-    }).isRequired
-    
-
+        key1: PropTypes.string,
+        key2: PropTypes.number,
+        key3: PropTypes.array,
+    }),
+    // could aslo have used PropTypes.exact here to ensure 
+    // that only these keys were present
+    unsuppliedProp: PropTypes.any
 };
 
 

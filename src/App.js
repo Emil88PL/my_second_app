@@ -10,7 +10,7 @@ import ConditionalRender3 from './Components/ConditionalRender3';
 import InlineLogicalExpression from './Components/InlineLogicalExpression';
 import Name from './Components/Name';
 import ComponentWithProps from './Components/ComponentWithProps';
-
+import ComponentWithState from './Components/ComponentWithState';
 
 
 function App() {
@@ -52,6 +52,7 @@ function App() {
       <ConditionalRender2 />
       <ConditionalRender3 />
       <InlineLogicalExpression />
+      <ComponentWithState />
     </React.Fragment>
   )
 };
