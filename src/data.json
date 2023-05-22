@@ -1,0 +1,32 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "category": "Web Development",
+            "price": 1234,
+            "advanced": false,
+            "name": "Web Development Fundamentals - JavaScript"
+        },
+        {
+            "id": 2,
+            "category": "Web Development",
+            "price": 1234,
+            "advanced": false,
+            "name": "Developing Application using ReactJS"
+        },
+        {
+            "id": 3,
+            "category": "Web Development",
+            "price": 1234,
+            "advanced": false,
+            "name": "Web Development Fundamentals - HTML/CSS"
+        },
+        {
+            "id": 4,
+            "category": "Project Managemenr",
+            "price": 1234,
+            "advanced": false,
+            "name": "Web Development Fundamentals - JavaScript"
+        }
+    ]
+}
