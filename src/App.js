@@ -14,6 +14,7 @@ import ComponentWithState from './Components/ComponentWithState';
 import ControllerWithControlledInput from './Components/ControllerWithControlledInput';
 
 import ClassComponentClock from './Components/ClassComponentClock';
+import FunctionComponentClock from './Components/FunctionComponentClock';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <ComponentWithState />
       <ClassComponentClock />
       <ControllerWithControlledInput />
+      <FunctionComponentClock/>
       <Name name="Emil"/>
       <ComponentWithProps 
         headerText="Heading text from header prop"
