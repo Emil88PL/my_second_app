@@ -13,6 +13,8 @@ import ComponentWithProps from './Components/ComponentWithProps';
 import ComponentWithState from './Components/ComponentWithState';
 import ControllerWithControlledInput from './Components/ControllerWithControlledInput';
 
+import ClassComponentClock from './Components/ClassComponentClock';
+
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
 
   return (
     <React.Fragment>
+      <ComponentWithState />
+      <ClassComponentClock />
       <ControllerWithControlledInput />
       <Name name="Emil"/>
       <ComponentWithProps 
@@ -53,7 +57,6 @@ function App() {
       <ConditionalRender2 />
       <ConditionalRender3 />
       <InlineLogicalExpression />
-      <ComponentWithState />
     </React.Fragment>
   )
 };

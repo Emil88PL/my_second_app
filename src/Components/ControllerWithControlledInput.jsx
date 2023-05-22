@@ -8,7 +8,8 @@ const ControllerWithControlledInput = () => {
     const handleSubmit = event =>{
         event.preventDefault();
         const dataToSend = JSON.stringify({ username })
-        console.log(dataToSend);
+        const upperName = username.toUpperCase();
+        console.log(upperName, dataToSend);
 
     };
 
