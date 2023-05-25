@@ -15,7 +15,10 @@ const ComponentsWithArrayOfData = () => {
 
     return (
         <ol>
-            {listItems}
+            <li>
+               {listItems}
+            </li>
+            
         </ol>
     );
 
