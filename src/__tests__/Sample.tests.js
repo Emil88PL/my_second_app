@@ -12,7 +12,9 @@ describe("A suite is just a function", () => {
         a = false;
         b = "some string";
 
-        expect(b).toContain("me");
+        // First two will pass and third fails, because the value used in test fallows JavaScript scope - if a parent value is change 
+        // inside a spec it will change for all fallowing specs 
+        expect(b).toContain("me"); // Contains "me"
     });
 
     it("there should only really be one expcet call but more can be made", () => {
