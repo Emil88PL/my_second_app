@@ -16,6 +16,8 @@ import ControllerWithControlledInput from './Components/ControllerWithControlled
 import ClassComponentClock from './Components/ClassComponentClock';
 import FunctionComponentClock from './Components/FunctionComponentClock';
 
+import Sillyname from './Components/SillyName';
+
 
 function App() {
 
@@ -59,6 +61,7 @@ function App() {
       <ConditionalRender2 />
       <ConditionalRender3 />
       <InlineLogicalExpression />
+      <Sillyname />
     </React.Fragment>
   )
 };
